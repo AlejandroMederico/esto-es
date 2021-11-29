@@ -42,7 +42,7 @@ export default function NavPricipal({ProjectSearch}) {
 
     return (
         <nav className="navbar navPrincipal">
-            <Link to="/">
+            <Link to="/esto-es">
                 <img src={Logo} alt="Logo esto es" width="40" height="32" />
             </Link>
             <form className="d-flex formularioSeachr" onSubmit={handleSubmit}>

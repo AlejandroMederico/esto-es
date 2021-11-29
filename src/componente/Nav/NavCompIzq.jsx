@@ -10,7 +10,7 @@ export default function NavCompIzq({url,titulo}) {
             {url === "home"
             ?<Fragment/>
             :<Fragment>
-                <Link to="/" className="d-flex align-items-center" style={{textDecoration:"none"}}>
+                <Link to="/esto-es" className="d-flex align-items-center" style={{textDecoration:"none"}}>
                 <FontAwesomeIcon icon={faArrowLeft} className="iconFlecha"/>
                 <p className="back">Back</p>
                 </Link>

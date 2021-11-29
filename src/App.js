@@ -2,7 +2,7 @@ import {React,useState} from 'react'
 import {
   BrowserRouter,
   Routes,
-  Route
+  Route,
 } from "react-router-dom";
 import generateStore from './redux/store';
 import Formulario from "./paginas/Formulario";
@@ -24,7 +24,7 @@ function App() {
         <Provider store={store}>
           <NavPricipal ProjectSearch={ProjectSearch}/>
           <Routes>
-              <Route path="/" element={
+              <Route path="/esto-es" element={
                   <Principal url={"home"} searchProject={searchProject}/>} />
               <Route path="/formulario" element={
                   <Formulario url={"formulario"}/>} />
