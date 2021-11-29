@@ -1,0 +1,132 @@
+.sinBorde{
+    border-bottom: 0px ;
+}
+.table>:not(:first-child) {
+    border-top: 0px solid currentColor;
+}
+.bodyPopover{
+    width: 181px;
+    height: 76px;
+}
+.textPopover{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #262626;
+}
+
+.btnDelete{
+    background: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.pDelete{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: Roboto;
+}
+.FilaProject{
+    display: flex;
+    flex-direction: column;
+}
+.FilaProjectName{
+    height: 22px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 0px;
+
+}
+.FilaProjectDate{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.45);
+}
+.FilaManager{
+    display: flex;
+    flex-direction: row;
+}
+.AvatarNombre{
+    margin-right: 8px;
+}
+.btnTablaEnable{
+    margin: 0px 10px;
+    width: 84px;
+    height: 22px;
+    /* background: #F5F5F5; */
+    background: red;
+/* Grey / grey-5 */
+
+border: 1px solid #D9D9D9;
+box-sizing: border-box;
+border-radius: 4px;
+padding: 1px 8px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 20px;
+text-align: center;
+}
+
+
+@media (max-width: 600px) {
+.FilaGeneral{
+    height: 80px;
+    /* display: grid; */
+    grid-template-columns: 1fr              1fr         1fr         1fr      ;
+    grid-template-areas:  "FilaProject FilaProject FilaProject FilaBotonMenu"
+                          "FilaProject FilaProject FilaProject FilaBotonMenu"
+                          "FilaPersona FilaPersona FilaPersona FilaBotonMenu";
+}
+.FilaGeneral .FilaProject{
+    grid-column-start: FilaProject;
+    grid-column-end: FilaProject;
+}
+.FilaGeneral .FilaBotonMenu{
+    grid-column-start: FilaBotonMenu;
+    grid-column-end: FilaBotonMenu;
+}
+.FilaGeneral .FilaPersona{
+    grid-column-start: FilaPersona;
+    grid-column-end: FilaPersona;
+}
+
+.FilaProject{
+    padding-bottom: 0px;
+    padding-left: 16px;
+    border: none;
+}
+
+.FilaProjectName{
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.FilaProjectDate{
+    font-size: 10px;
+    line-height: 12px;
+}
+.FilaPersona{
+    padding-bottom: 0px;
+    padding-left: 16px;
+    display: flex;
+    flex-direction: row;
+
+}
+}
