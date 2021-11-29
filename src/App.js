@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {React,useState} from 'react'
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+import generateStore from './redux/store';
+import Formulario from "./paginas/Formulario";
+import Principal from "./paginas/Principal";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import { Provider } from "react-redux";
+import NavPricipal from "./componente/Nav/NavPricipal";
 
 function App() {
+  const store = generateStore()
+  const [searchProject, setsearchProject] = useState(null)
+  const ProjectSearch = (search) =>{
+    setsearchProject(search)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div style={{background:"#E5E5E5"}}>
+        <BrowserRouter>
+        <Provider store={store}>
+          <NavPricipal ProjectSearch={ProjectSearch}/>
+          <Routes>
+              <Route path="/" element={
+                  <Principal url={"home"} searchProject={searchProject}/>} />
+              <Route path="/formulario" element={
+                  <Formulario url={"formulario"}/>} />
+              <Route path="/editar" element={
+                  <Formulario url={"editar"}/>} />
+          </Routes>
+          </Provider>
+        </BrowserRouter>
+      </div>
   );
 }
 
