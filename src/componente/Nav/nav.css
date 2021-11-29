@@ -1,0 +1,141 @@
+.componenteIzqTitulo{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+    }
+
+.iconFlecha{
+    color: rgba(0, 0, 0, 0.65);
+    margin-right: 8px;
+}
+
+.iconFlecha:hover{
+    font-size: 20px;
+}
+
+.back{
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 22px;
+color: rgba(0, 0, 0, 0.65);
+margin-top: auto;
+margin-bottom: auto;
+margin-right: 24px;
+}
+
+.btnAdd{
+padding: 8px 16px;
+background: #F5222D;
+border-radius: 4px;
+height: 40px;
+}
+.Pnav{
+font-family: Roboto;
+text-decoration: none;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+}
+
+.iconfaPlus{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-right: 8px;
+}
+
+
+.navPrincipal{
+    height: 56px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    border-bottom: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    padding-right: 48px;
+    padding-left: 48px;
+}
+
+.navPagina{
+     height: 64px;
+     padding-left: 48px;
+     padding-right: 48px;
+
+}
+
+.formularioSeachrInput{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.formularioSeachrButton{
+    padding: 2px 16px;
+    border-radius: 4px;
+    background: rgb(222, 231, 213);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media (max-width: 600px) {
+    .Pnav{
+        font-size: 12px;
+        line-height: 16px;
+        }
+    .iconfaPlus{
+        color: #FFFFFF;
+        font-size: 16px;
+        margin-right: 8px;
+    }
+    .btnAdd{
+        padding: 4px 16px;
+        background: #F5222D;
+        border-radius: 4px;
+        height: 26px;
+        }
+
+    .componenteIzqTitulo{
+        font-size: 16px;
+        line-height: 20px;
+        }
+
+    .navPagina{
+        margin: 0px;
+        height: 40px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 100%;
+   }
+   
+    .navPrincipal{
+        margin: 0px;
+        height: 40px;
+        padding-right: 16px;
+        padding-left: 16px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 100%;
+    }
+    .formularioSeachr{
+        height: 25px;
+        width: 200px;
+    }
+    .formularioSeachrInput{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .formularioSeachrButton{
+        padding: 0px 12px;
+    }
+  }
